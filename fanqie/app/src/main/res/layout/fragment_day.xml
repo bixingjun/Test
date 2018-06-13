@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/finishtime"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:text="4.6 h"
+            android:textColor="#000"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="02/01/2018"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:layout_error="@layout/view_error"
+        app:recyclerClipToPadding="true"
+        app:recyclerPadding="8dp"
+        app:recyclerPaddingTop="8dp"
+        app:recyclerPaddingBottom="8dp"
+        app:recyclerPaddingLeft="8dp"
+        app:recyclerPaddingRight="8dp"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"
+        />
+</LinearLayout>
